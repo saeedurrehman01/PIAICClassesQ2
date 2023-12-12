@@ -1,8 +1,14 @@
 
-import React from 'react'
+import Link from "next/link"
 
-export default function page() {
+function Contact() {
   return (
-    <div>Contact</div>
+    <div>
+      <h1>This is contact page.</h1>
+          <Link href={"/"}><h2>Back to Home Page</h2></Link>
+          <p>Lorem ipsum dolor sit amet.</p>
+    </div>
   )
 }
+
+export default Contact
