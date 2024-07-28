@@ -1,8 +1,12 @@
-import Link from "next/link"
-import Stopwatch from "./components/Stopwatch"
+import Button from "./components/Button";
+import '../app/globals.css'
 
-export default Home(){
-  return(
-    <Link href={}><div>StopWatch</div></Link>
-  )
+
+export default function Home() {
+  return (
+    <div>
+      <div>Home Page</div>
+        <Button title="Apply"/>
+    </div>
+  );
 }
