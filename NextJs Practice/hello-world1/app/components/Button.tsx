@@ -1,14 +1,15 @@
+"use client";
+
 import { ButtonProps } from "../interfaces/componentsTypes";
 
-export default function Button(props: ButtonProps) {
-  console.log("props", props.title);
-
+export default function Button({ title, onClick }: ButtonProps) {
   return (
     <button
       type="button"
       className="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+      onClick={onClick}
     >
-      {props.title}
+      {title}
     </button>
   );
 }
