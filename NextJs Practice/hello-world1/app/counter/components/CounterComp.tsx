@@ -16,11 +16,17 @@ export default function CounterComp() {
     console.log("Count in onClickMinusHandler", count - 1);
   };
 
+  const onClickResetHandler = () => {
+    setCount(0);
+    console.log("Count in onClickMinusHandler", count);
+  };
+
   return (
     <div>
       <Button title="+" onClick={onClickAddHandler} />
       <p>{count}</p>
       <Button title="-" onClick={onClickMinusHandler} />
+      <Button title="Reset" onClick={onClickResetHandler} />
     </div>
   );
 }
